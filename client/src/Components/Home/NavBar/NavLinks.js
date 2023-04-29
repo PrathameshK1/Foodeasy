@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Guidlines from './guidlines';
+
 const NavLinks = () => {
   return (
     <>
@@ -45,7 +47,7 @@ const NavLinks = () => {
       </li>
       <li>
         <a
-          href="guidlines.js"
+          href="th.html"
           aria-label="Blog"
           title="Blog"
           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-700"
