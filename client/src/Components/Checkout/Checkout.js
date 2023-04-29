@@ -44,25 +44,23 @@ function total(pricee, amt){
   
   }
 
-function home(){
-    
     
 
-  fetch('http://localhost:4000/api/products')
-   .then(response => response.json())
-        .then(data => setActivity(data))
+  // fetch('http://localhost:4000/api/products')
+  //  .then(response => response.json())
+  //       .then(data => setActivity(data))
   
-  }      
-  const[records,setActivity]=useState([]);
+  // }      
+  // const[records,setActivity]=useState([]);
   function selectproduct(serial){
     sessionStorage.setItem("selected_post", serial);
   }
-  useEffect(()=>{home()});
+  // useEffect(()=>{home()});
 
 
   
 
-//const product = productsData[Number(sessionStorage.getItem("itemNumber_"+sessionStorage.getItem("itemCount")))];
+const product = productsData[Number(sessionStorage.getItem("itemNumber_"+sessionStorage.getItem("itemCount")))];
 
 return (
     <div className="flex justify-center my-6">
@@ -94,7 +92,7 @@ return (
               </tr>
             </thead>
          
-            {records.map((ind,index) => {
+            {productsData.map((product,index) => {
               if(index<=Number(sessionStorage.getItem("itemCount"))){
 const product = productsData[Number(sessionStorage.getItem("itemNumber_"+index))];
                 
