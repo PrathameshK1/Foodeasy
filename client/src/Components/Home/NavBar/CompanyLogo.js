@@ -8,13 +8,13 @@ const CompanyLogo = () => {
       <Link
         to="/"
         href="/"
-        aria-label="FarmEasy"
-        title="FarmEasy"
+        aria-label="FoodEasy"
+        title="FoodEasy"
         className="inline-flex items-center mr-8"
       >
         <img src={logo} alt="logo" className="w-10" />
         <span className="ml-2 text-xl font-semibold font-display tracking-wide text-teal-400 uppercase">
-          FarmEasy
+          FoodEasy
         </span>
       </Link>
     </div>

@@ -8,15 +8,12 @@ const Hero = () => {
           <div className="container py-24 mx-auto text-center sm:px-4 font-sans">
           <h1 className="text-4xl font-semibold font-display leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none">
               <span className="relative inline-block text-transparent text-gray-800 tracking-normal">
-               Lets Get you Some Fresh Fruits and Vegetables
+               You only gain by giving !!
               </span>
               </h1>
               <div>
-              <h1 className="text-4xl font-semibold font-display leading-10 tracking-tight text-gray-800 sm:text-3xl sm:leading-none">
-              <div className="relative inline-block text-transparent text-gray-800 tracking-normal">
-              Say goodbye to all your healthcare and price worries with us
-            </div>
-            </h1>
+                <span></span>
+              
             </div>
             
 
@@ -30,11 +27,15 @@ const Hero = () => {
               /> */}
              <h1 className="text-4xl font-semibold font-display leading-10 tracking-tight text-gray-800 sm:text-3xl sm:leading-none">
               <div className="relative inline-block text-transparent text-gray-800 tracking-normal">
-                           Order Now !!
             </div>
             </h1>
             </div>
-
+            <h1 className="text-4xl font-semibold font-display leading-10 tracking-tight text-gray-800 sm:text-3xl sm:leading-none">
+              <div className="relative inline-block text-transparent text-gray-800 tracking-normal">
+            
+             Join us today to make a Change
+            </div>
+            </h1>
             {/* <div className="mt-12 text-base tracking-wider text-teal-300">
               Lesss Go!
             </div> */}

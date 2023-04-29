@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createAccount } from "../../../Redux/user/actions";
@@ -38,12 +39,46 @@ const Registration = ({ setIsAccount }) => {
     dispatch(createAccount(formData));
     const { fastName, lastName, userName, phone, email, password, cmPassword } =
       formData;
-   
+    // if (
+    //   !fastName ||
+    //   !lastName ||
+    //   !userName ||
+    //   !phone ||
+    //   !email ||
+    //   !password ||
+    //   !cmPassword
+    // ) {
+    //   return openNotification("error", "All input value not given");
+    // }
+
+    // if (
+    //   !errorData.fastName &&
+    //   !errorData.lastName &&
+    //   !errorData.userName &&
+    //   !errorData.phone &&
+    //   !errorData.email &&
+    //   !errorData.password &&
+    //   !errorData.cmPassword
+    // ) {
+    //   console.log(formData);
+    //   openNotification("success", "User Sign Up Successful");
+    // }
   };
   return (
     <div>
       <div className="grid w-full grid-cols-3">
-     
+        <div
+          className="h-full col-span-1 p-6 bg-bottom bg-cover rounded-none sm:h-full sm:rounded sm:w-auto"
+          style={{
+            backgroundImage: ` url("https://images.unsplash.com/photo-1584362917165-526a968579e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")`,
+          }}
+        >
+          <div className="pt-2 font-display text-5xl font-semibold text-left text-teal-500 my-18">
+            FarmEasy
+          </div>
+          <div className="text-left text-gray-800 mt-2">
+            Lets Conect with Fresh Producers
+          </div>
           <div className="inline-block px-4 py-2 mt-5 text-center text-white bg-teal-500 rounded hover:bg-teal-700 pointer-cursor">
             Learn More
           </div>
