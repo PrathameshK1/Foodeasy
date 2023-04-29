@@ -1,7 +1,42 @@
 import React from 'react';
+import { useState } from 'react';
+import axios from 'axios';
+
+
+
 
 const AddNewProducts = ({ setEditModal }) => {
+  const[name,Setname]=useState("")
+    // const url = ""
+    // const [data, setData] = useState({
+    //   name:"", 
+    //   date :"", 
+    //   iduser:""
+    // })
+    // function submit(e){
+    //   e.preventDefault();
+    //   axios.post(url, {
+    //     name:data.name, 
+    //     date: data.date, 
+        
+    //   })
+    //   .then(res => { console.log(res.data)})
+    // }
+    // function handle(e){ 
+    //   const newdata = {...data }
+    //   newdata[e.target.id] = e.target.value
+    //     setData(newdata)
+
+    //     console.log(newdata)
+  
+    // }
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log(name);
+  }
+   
   return (
+    <>
     <section>
       <div className="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-filter saturate-150 backdrop-blur-sm">
         <div className="container items-center px-5 py-12 lg:px-20 ml-0 lg:ml-20">
@@ -50,7 +85,7 @@ const AddNewProducts = ({ setEditModal }) => {
               </div>
             </div>
             {/* Product Details */}
-            <form className="p-5 space-y-8 divide-y divide-gray-200">
+            <form onSubmit={handleSubmit} className="p-5 space-y-8 divide-y divide-gray-200">
               <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
                 <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
                   <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-3">
@@ -63,6 +98,8 @@ const AddNewProducts = ({ setEditModal }) => {
                     <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <div className="max-w-lg flex rounded-md shadow-sm">
                         <input
+                          onChange={(e)=>Setname(e.target.value)}
+                          value={name}
                           type="text"
                           name="username"
                           id="username"
@@ -73,7 +110,7 @@ const AddNewProducts = ({ setEditModal }) => {
                     </div>
                   </div>
 
-                  <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  {/* <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                     <label
                       htmlFor="about"
                       className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
@@ -241,11 +278,11 @@ const AddNewProducts = ({ setEditModal }) => {
                           id="city"
                           className="max-w-lg block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
                         />
-                      </div>
-                    </div>
+                      </div> */}
+                    {/* </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="pt-5">
                 <div className="flex justify-end">
@@ -263,14 +300,18 @@ const AddNewProducts = ({ setEditModal }) => {
                   </button>
                 </div>
               </div>
+              </div>
+            </div>
             </form>
           </div>
         </div>
-      </div>
+        </div>
+     
 
       {/* Background Modal Opacity */}
       <div className="opacity-25 fixed inset-0 z-40 bg-gray-900" />
     </section>
+    </>
   );
 };
 
