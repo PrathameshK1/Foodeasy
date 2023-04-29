@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VendorCTA = () => {
+const guidlines = () => {
   return (
     <>
       <section>
@@ -12,14 +12,12 @@ const VendorCTA = () => {
                  Food Safety Guidlines 
                   <span className="relative px-1">
                     <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-teal-accent-700"></div>
-                  
                   </span>
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  
+                Here are some general food safety guidelines that are important to follow when donating food:
                 </p>
               </div>
-              
           </div>
         </div>
         </div>
@@ -28,4 +26,5 @@ const VendorCTA = () => {
   );
 };
 
-export default VendorCTA;
+export default guidlines;
+
