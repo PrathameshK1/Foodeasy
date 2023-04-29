@@ -38,7 +38,21 @@ const ContactVendor = () => {
           </form>
         </div>
       </div>
+      <h1 className="text-xl text-gray-800">Guidlines</h1>
+    <h3 className="text-base text-gray-700">1.Keep hot foods hot (above 140°F) and cold foods cold (below 40°F).<br/>
+    2.Use clean, sanitized containers for storing and transporting food.<br/>
+    3.Do not donate food that has passed its expiration date.<br/>
+    4.Do not donate food that has been previously opened or partially consumed.<br/>
+5.Do not donate food that has been prepared in a home kitchen, as it may not meet local health department regulations.<br/>
+6.Wash your hands thoroughly with soap and water before handling food.<br/>
+7.Do not donate food that has been in contact with contaminants such as dirt, insects, or chemicals.<br/>
+8.Label all donated food with the date it was prepared or received, the type of food, and any special instructions or dietary restrictions.<br/>
+9.If donating perishable items, such as meat, dairy, or fresh produce, ensure that they are stored and transported at the correct temperature.<br/>
+10.If donating canned or packaged goods, ensure that the packaging is intact and free from damage or contamination.<br/>
+11.By following these guidelines, you can help ensure that the food you donate is safe and healthy for those in need.</h3>
     </div>
+    
+    
   );
 };
 
