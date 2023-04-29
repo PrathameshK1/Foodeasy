@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import shopCard from '../../../Data/vendor';
+import vendorData from '../../../Data/vendor';
 
 
 const ShopCard = () => {
@@ -30,10 +30,10 @@ const ShopCard = () => {
       {/* Shop Card */}
       <div className="w-full text-center py-8">
         <h1 className="font-medium text-4xl font-display tracking-wide text-teal-700">
-          Your Nearest Farmers
+          Your Nearest Donors
         </h1>
         <p className="font-sans text-base tracking-wide text-gray-700 mt-2">
-          Search for Fresh Products, Filter by your location
+        Share the love: donate food today!, Filter by location
         </p>
       </div>
 
@@ -49,7 +49,7 @@ const ShopCard = () => {
               <div className="absolute -mt-12 w-full flex justify-center items-center">
                 <img
                   className="shadow-3xl rounded-2xl border-2 border-gray-400 h-16 w-16"
-                  src={shopCard.logo}
+                  src={vendorData.logo}
                   alt=""
                 />
               </div>
@@ -58,7 +58,7 @@ const ShopCard = () => {
                 <div className="absolute right-4 top-8 shadow-4xl">
                   <p
                     className={`rounded border border-teal-300 py-0.5 px-3 ${
-                      shopCard.status === 'Open'
+                      vendorData.status === 'Open'
                         ? 'text-green-800'
                         : 'text-red-400'
                     }`}
@@ -71,7 +71,7 @@ const ShopCard = () => {
                   {record.shopName}
                 </h1>
                 <div className="text-sm font-sans text-gray-800">
-                  <p className="pb-1 text-yellow-800">⭐ {shopCard.rating}</p>
+                  <p className="pb-1 text-yellow-800">⭐ {vendorData.rating}</p>
                   <p className="pb-1">
                     {record.location} 
                   </p>

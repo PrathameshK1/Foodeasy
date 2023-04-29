@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Purchases from '../../Data/Purchases';
+import products  from '../../Data/products'
+import productsData from '../../Data/products';
 
 const Products = () => {
 
 
-  function home(){
+  // function home(){
     
     
 
-    fetch('http://localhost:4000/api/products')
-     .then(response => response.json())
-          .then(data => setActivity(data))
+    // fetch('http://localhost:4000/api/products')
+    //  .then(response => response.json())
+    //       .then(data => setActivity(data))
     
-    }      
-    const[records,setActivity]=useState([]);
+    // }      
+    // const[records,setActivity]=useState([]);
     function selectproduct(serial){
       sessionStorage.setItem("selected_post", serial);
     }
-    useEffect(()=>{home()});
+    // useEffect(()=>{home()});
       return (   
   
     <div className="bg-white">
@@ -48,7 +50,7 @@ const Products = () => {
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
-          {records.map((record,index) => (
+          {productsData.map((record,index) => (
             <div key={record.id} className="group shadow-4xl">
               <Link to="/productDetails">
                 <div className="w-full min-h-80 bg-blue-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
@@ -147,7 +149,7 @@ const Products = () => {
           
 
 
-  {records.filter(function students(student){
+  {productsData.filter(function students(student){
     return student.name==="Cabbage" || student._id==="643928bad611268b56272351";
   
   }).map((record,index) => (
@@ -243,7 +245,7 @@ const Products = () => {
  
  <div></div>
 
-{records.filter(function students(student){
+{productsData.filter(function students(student){
     return student.name==="Potato" || student._id==="6446889f0d5372cd82c08ef9";
   }).map((record,index) => (
   <div key={record.id} className="group shadow-4xl">
@@ -338,7 +340,7 @@ const Products = () => {
  <div></div>
 
 
-{records.filter(function students(student){
+{productsData.filter(function students(student){
     return student.name==="Cucumber" || student._id==="643927fad611268b5627234f";
   }).map((record,index) => (
   <div key={record.id} className="group shadow-4xl">
