@@ -45,7 +45,7 @@ const NavLinks = () => {
       </li>
       <li>
         <a
-          href="/"
+          href="guidlines.js"
           aria-label="Blog"
           title="Blog"
           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-700"
