@@ -84,10 +84,10 @@ const VendorSidebar = ({ sidebarOpen, setSidebarOpen }) => {
             src="https://www.pngitem.com/pimgs/m/255-2558624_pharmacy-medical-logo-hd-png-download.png"
           />
           <h2 className="font-display text-xl font-semibold tracking-wide text-teal-50 title-font text-center">
-            Farmer Production
+           Growing Buds foundation
           </h2>
           <p className="font-sans text-sm font-semibold tracking-wide text-teal-100 title-font text-center">
-            owner@gmail.com
+            GrowBuds@gmail.com
           </p>
         </div>
 
