@@ -81,3 +81,5 @@ app.post('/api/insert',async (req,resp3)=>{
   let query={_id: ObjectId(req.params.id)};
   await collection.insertOne(req.body);
 });
+
+
