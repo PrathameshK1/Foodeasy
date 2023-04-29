@@ -1,0 +1,14 @@
+{
+  "name": "e-pharmacy",
+  "version":"1.0.0",
+  "description": "E-Pharmacy is a business model that deals with the preparation and sale of prescription and non-prescription medicine as in traditional pharmacies. However, online pharmacies take orders online and send the medicine to their destination.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
