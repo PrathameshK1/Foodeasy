@@ -9,7 +9,7 @@ const VendorCTA = () => {
             <div className="flex flex-col justify-center">
               <div className="max-w-xl mb-6">
                 <h2 className="max-w-lg mb-6 font-display text-3xl font-semibold tracking-wide text-gray-900 sm:text-4xl sm:leading-tight ">
-                  Add your Farmer Production Online
+                  Donate online, make an impact offline
                   <span className="relative px-1">
                     <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-teal-accent-700"></div>
                     <span className="relative inline-block text-teal-accent-700">
@@ -18,9 +18,7 @@ const VendorCTA = () => {
                   </span>
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae. explicabo.
+                  Our food donation app comes packed with a range of features designed to make  it easy and convenient for users to donate food, money, or their time to help  those in need. 
                 </p>
               </div>
               <p className="mb-4 text-sm font-semibold tracking-widest uppercase text-teal-700 font-sans">
@@ -44,7 +42,7 @@ const VendorCTA = () => {
                         ></polygon>
                       </svg>
                     </span>
-                    Take user orders form online
+                    Take user Donations online
                   </li>
                   <li className="flex">
                     <span className="mr-1">
@@ -80,7 +78,7 @@ const VendorCTA = () => {
                         ></polygon>
                       </svg>
                     </span>
-                    Manage your store
+                    Geolocation and filtering
                   </li>
                 </ul>
                 <ul className="space-y-3">
@@ -100,7 +98,7 @@ const VendorCTA = () => {
                         ></polygon>
                       </svg>
                     </span>
-                    Get more orders
+                    Interactive ChatBot
                   </li>
                   <li className="flex">
                     <span className="mr-1">
@@ -118,7 +116,7 @@ const VendorCTA = () => {
                         ></polygon>
                       </svg>
                     </span>
-                    Storage shed
+                    alerts for food availability
                   </li>
                   <li className="flex">
                     <span className="mr-1">
@@ -136,7 +134,7 @@ const VendorCTA = () => {
                         ></polygon>
                       </svg>
                     </span>
-                    Satoshi Nakamoto
+                    for largescale donations
                   </li>
                 </ul>
               </div>
@@ -155,8 +153,7 @@ const VendorCTA = () => {
         <div className="text-white bg-teal-500 border-teal-400 rounded-none card card-body sm:rounded-lg">
           <div className="flex flex-col items-center justify-between px-2 py-4 lg:flex-row sm:py-8 sm:px-4">
             <p className="mb-6 text-lg lg:text-xl font-sans font-medium lg:mb-0 text-white tracking-wide">
-              Open your FarmyStore and turn into online store and increase your
-              sells. It's totally free!
+            Don't wait, make your online donation today and help us feed those in need. Every donation makes a difference in the lives of those facing hunger and poverty.
             </p>
             <button className="flex py-2 px-6 rounded shadow-3xl bg-teal-50 focus:outline-none active:bg-teal-400 text-teal-600 font-medium transition duration-150 ease-in-out hover:bg-teal-100 hover:text-teal-800">
               <svg

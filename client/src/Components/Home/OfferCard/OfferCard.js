@@ -10,12 +10,11 @@ const OfferCard = () => {
           alt="Mountain"
         />
         <div className="absolute top-8 sm:top-3 md:top-6 lg:top-12 left-6 lg:left-6 text-white">
-          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">DON’T MISS</h2>
-          <h1 className="font-semibold text-xl lg:text-3xl mb-1 lg:mb-2">
-            Huge Sale <br />
-            70%
-          </h1>
-          <p className="text-sm">SHOP NOW</p>
+          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">Donate Food</h2>
+          <h4 className="font-semibold text-xl md:text-1xl mb-1 lg:mb-2">
+          Your donations<br/>helps fight hunger...
+          </h4>
+          {/* <p className="text-sm">Donate non-perishable items, canned goods, and fresh produce to those in need today.</p> */}
         </div>
       </div>
       <div className="rounded overflow-hidden shadow-lg relative">
@@ -25,13 +24,11 @@ const OfferCard = () => {
           alt="River"
         />
         <div className="absolute top-8 sm:top-3 md:top-6 lg:top-12 left-6 lg:left-6 text-white">
-          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">COMMITMENT</h2>
-          <h1 className="font-semibold text-xl lg:text-3xl mb-1 lg:mb-2">
-            100% Secure
-            <br />
-            delivery
-          </h1>
-          <p className="text-sm">READ MORE</p>
+          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">Volunteer</h2>
+          <h4 className="font-semibold text-xl lg:text-1xl mb-1 lg:mb-2">
+          Make a difference by<br/>volunteering at a food pantry...
+          </h4>
+          {/* <p className="text-sm">Help sort, pack, and distribute food to those in need</p> */}
         </div>
       </div>
 
@@ -42,13 +39,11 @@ const OfferCard = () => {
           alt="Forest"
         />
         <div className="absolute top-8 sm:top-3 md:top-6 lg:top-12 left-6 lg:left-6 text-white">
-          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">FREE SHIPPING</h2>
-          <h1 className="font-semibold text-xl lg:text-3xl mb-1 lg:mb-2">
-            35%
-            <br />
-            OFF
-          </h1>
-          <p className="text-sm">SHOP NOW</p>
+          <h2 className="text-sm lg:text-md mb-1 lg:mb-2">Host a Food Drive</h2>
+          <h4 className="font-semibold text-xl lg:text-1xl mb-1 lg:mb-2">
+          Every contribution<br/>can make a big impact... 
+          </h4>
+          {/* <p className="text-sm">SHOP NOW</p> */}
         </div>
       </div>
     </div>
@@ -56,3 +51,4 @@ const OfferCard = () => {
 };
 
 export default OfferCard;
+

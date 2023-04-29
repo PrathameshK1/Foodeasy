@@ -2,30 +2,31 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import allShops from '../../../Data/vendor';
 import { useEffect } from 'react';
+import vendorData from '../../../Data/vendor';
 const DisplayShops = () => {
-  function home(){
-    fetch('http://localhost:4000/api/shops')
-     .then(response => response.json())
-          .then(data => setActivity(data))
+  // function home(){
+  //   fetch('http://localhost:4000/api/shops')
+  //    .then(response => response.json())
+  //         .then(data => setActivity(data))
     
-    }      
-    const[records,setActivity]=useState([]);
+  //   }      
+  //   const[records,setActivity]=useState([]);
     
-    useEffect(()=>{home()});
+  //   useEffect(()=>{home()});
 
     return (
         <div className="pb-10 pt-8 bg-gray-50">
       {/* Shop Card */}
       <div className="w-full text-center py-8">
         <h1 className="font-medium text-4xl font-display tracking-wide text-teal-700">
-          All Registered Farmy Stores
+          All our Affilated NGO's
         </h1>
         <p className="font-sans text-base tracking-wide text-gray-700 mt-2">
         
         </p>
       </div>
       <div className="cards flex flex-wrap justify-center">
-        {records.map((record) => (
+        {vendorData.map((record) => (
           <div className="pb-4 m-6 rounded-lg shadow-3xl w-96 md:w-2/5 lg:w-1/4 bg-white">
             <img src={record.pic} className="rounded-t-lg" alt="" />
 

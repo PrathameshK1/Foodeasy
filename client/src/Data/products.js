@@ -3,7 +3,7 @@ const productsData = [
     {
         "_id": "643927fad611268b5627234f",
         "name": "Rice ",
-        "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51v2ozMXy8L._SX522_.jpg",
+        "image": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSMDyA6uVoI5sviim1bpR0oeUMlORYZC-8I6i6Xxi4vMwAOTq6-nniWVN7ED1RUB9CM",
         "description": "highest grade Basmati rice ",
         "price": 54,
         "rating": 4,
@@ -31,7 +31,7 @@ const productsData = [
     {
         "_id": "643928ead611268b56272352",
         "name": "Lentils",
-        "image": "https://www.jiomart.com/images/product/600x600/590000090/potato-1-kg-product-images-o590000090-p590000090-0-202207291750.jpghttps://m.media-amazon.com/images/I/41kcRn3AUeL._PIbundle-2,TopRight,0,0_SX460SY307SH20_.jpg",
+        "image": "https://www.keepingthepeas.com/wp-content/uploads/2022/11/red-lentils-in-wood-bowl.jpg",
         "description": "Fresh and healthy lentils.",
         "price": 520,
         "rating": 4,

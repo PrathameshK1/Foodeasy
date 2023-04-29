@@ -14,15 +14,15 @@ const ShopCard = () => {
 
 
 
-  function home(){
-    fetch('http://localhost:4000/api/shops')
-     .then(response => response.json())
-          .then(data => setActivity(data))
+  // function home(){
+  //   fetch('http://localhost:4000/api/shops')
+  //    .then(response => response.json())
+  //         .then(data => setActivity(data))
     
-    }      
-    const[records,setActivity]=useState([]);
+  //   }      
+  //   const[records,setActivity]=useState([]);
     
-    useEffect(()=>{home()});
+  //   useEffect(()=>{home()});
       return (
         <>
       <div className="w-full text-center py-8"></div>
@@ -39,8 +39,8 @@ const ShopCard = () => {
 
       {/* Shop cards */}
       <div className="cards flex flex-wrap justify-center">
-        {records.filter(function students(student){
-    return student.location === "Andheri East, Mumbai";
+        {vendorData.filter(function students(student){
+    return student.location === "Andheri West, Mumbai";
       }).map((record) => (
           <div className="pb-4 m-6 rounded-lg shadow-3xl w-96 md:w-2/5 lg:w-1/4 bg-white">
             <img src={record.pic} className="rounded-t-lg" alt="" />
@@ -49,7 +49,7 @@ const ShopCard = () => {
               <div className="absolute -mt-12 w-full flex justify-center items-center">
                 <img
                   className="shadow-3xl rounded-2xl border-2 border-gray-400 h-16 w-16"
-                  src={vendorData.logo}
+                  src={record.logo}
                   alt=""
                 />
               </div>
@@ -58,7 +58,7 @@ const ShopCard = () => {
                 <div className="absolute right-4 top-8 shadow-4xl">
                   <p
                     className={`rounded border border-teal-300 py-0.5 px-3 ${
-                      vendorData.status === 'Open'
+                      record.status === 'Open'
                         ? 'text-green-800'
                         : 'text-red-400'
                     }`}
@@ -116,7 +116,7 @@ const ShopCard = () => {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                     ></path>
                   </svg>
-                  See and Visit FarmyStore
+                  See and Visit Foodeasy
                 </button>
               </Link>
             </div>
@@ -154,25 +154,3 @@ const ShopCard = () => {
 
 export default ShopCard;
 
-{/* // export async function getServerSideProps(router){
-//   const client=await MongoClient.connect(process.env.MONGO_URI, {
-//     useNewUrlParser:true,
-//     useUnifiedTopology:true,
-//   });
-
-//   const db=client.db(process.env.DB_NAME);
-//   var collection=db.collection('selleraccs');
-//   var posts=await collection.find().toArray();
-
-//   client.close();
-
-//   return{
-//     props:{
-//       posts:posts.map((post)=>({
-//         ...post,
-//         _id:post._id.toString(),
-//       })),
-//       revalidate:1,
-//       },
-//     };
-// } */}
