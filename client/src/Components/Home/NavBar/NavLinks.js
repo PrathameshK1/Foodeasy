@@ -43,6 +43,16 @@ const NavLinks = () => {
           About
         </a>
       </li>
+      <li>
+        <a
+          href="/"
+          aria-label="Blog"
+          title="Blog"
+          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-700"
+        >
+          Guidlines
+        </a>
+      </li>
     </>
   );
 };
