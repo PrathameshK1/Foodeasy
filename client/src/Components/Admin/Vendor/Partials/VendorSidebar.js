@@ -69,7 +69,7 @@ const VendorSidebar = ({ sidebarOpen, setSidebarOpen }) => {
             >
               <img src={logo} alt="logo" className="object-contain w-10" />
               <span className="ml-2 text-base sm:text-lg font-display font-semibold tracking-wide leading-snug text-teal-50 uppercase">
-                FarmEasy
+                FoodEasy
               </span>
             </div>
           </Link>
@@ -81,7 +81,7 @@ const VendorSidebar = ({ sidebarOpen, setSidebarOpen }) => {
           <img
             alt="testimonial"
             className="inline-block object-cover object-center w-20 h-20 mb-2 rounded-full"
-            src="https://www.pngitem.com/pimgs/m/255-2558624_pharmacy-medical-logo-hd-png-download.png"
+            src="https://img.freepik.com/free-vector/tiny-people-standing-near-box-donation-food-delivery-volunteers-giving-healthy-grocery-goods-charity-flat-vector-illustration-social-support-humanitarian-help-community-sharing-concept_74855-21023.jpg"
           />
           <h2 className="font-display text-xl font-semibold tracking-wide text-teal-50 title-font text-center">
            Growing Buds foundation
