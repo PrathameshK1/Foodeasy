@@ -4,9 +4,26 @@ import Purchases from '../../Data/Purchases';
 import productsData from '../../Data/products';
 
 const Products = () => {
+  
+  const [foodAllergies, setFoodAllergies] = useState('');
+  const [religiousRestrictions, setReligiousRestrictions] = useState('');
+  const [preferredCuisines, setPreferredCuisines] = useState('');
+  const [formDataArray, setFormDataArray] = useState([]);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newFormData = {
+      foodAllergies: foodAllergies,
+      religiousRestrictions: religiousRestrictions,
+      preferredCuisines: preferredCuisines
+    }
+    setFormDataArray([...formDataArray, newFormData]);
+    setFoodAllergies('');
+    setReligiousRestrictions('');
+    setPreferredCuisines('');
+  }
 
-  function home(){
+    function home(){
     
     
 
@@ -431,7 +448,25 @@ const Products = () => {
     </Link>
   </div>
 ))};
-
+ <form onSubmit={handleSubmit}>
+      <label>
+        Food Allergies:
+        <input type="text" value={foodAllergies} onChange={(event) => setFoodAllergies(event.target.value)} />
+      </label>
+      <br />
+      <label>
+        Religious Restrictions:
+        <input type="text" value={religiousRestrictions} onChange={(event) => setReligiousRestrictions(event.target.value)} />
+      </label>
+      <br />
+      <label>
+        Preferred Cuisines:
+        <input type="text" value={preferredCuisines} onChange={(event) => setPreferredCuisines(event.target.value)} />
+      </label>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+ 
 
         </div>
       </div>
