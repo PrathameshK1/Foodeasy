@@ -6,33 +6,40 @@ import axios from 'axios';
 
 
 const AddNewProducts = ({ setEditModal }) => {
-  const[name,Setname]=useState("")
-    // const url = ""
-    // const [data, setData] = useState({
-    //   name:"", 
-    //   date :"", 
-    //   iduser:""
-    // })
-    // function submit(e){
-    //   e.preventDefault();
-    //   axios.post(url, {
-    //     name:data.name, 
-    //     date: data.date, 
-        
-    //   })
-    //   .then(res => { console.log(res.data)})
-    // }
-    // function handle(e){ 
-    //   const newdata = {...data }
-    //   newdata[e.target.id] = e.target.value
-    //     setData(newdata)
+  const[name,Setname]=useState("");
+  const[details,Setdetails]=useState("")
+    const url = "";
+    const [data, setData] = useState({
+      name:"", 
+      date :"", 
+      iduser:"",
+      details:"",
+    });
 
-    //     console.log(newdata)
+    function submit(e){
+      e.preventDefault();
+      axios.post(url, {
+        name:data.name, 
+        date: data.date, 
+        details:data.details,
+        image:data.image,
+        
+      })
+      .then(res => { console.log(res.data)})
+    }
+    function handle(e){ 
+      const newdata = {...data }
+      newdata[e.target.id] = e.target.value
+        setData(newdata)
+      
+
+        console.log(newdata)
   
-    // }
+    }
   const handleSubmit=(e)=>{
     e.preventDefault();
     console.log(name);
+    console.log(details);
   }
    
   return (
@@ -110,7 +117,7 @@ const AddNewProducts = ({ setEditModal }) => {
                     </div>
                   </div>
 
-                  {/* <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                   <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                     <label
                       htmlFor="about"
                       className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
@@ -119,11 +126,13 @@ const AddNewProducts = ({ setEditModal }) => {
                     </label>
                     <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <textarea
+                      onChange={(e)=>Setdetails(e.target.value)}
                         id="about"
                         name="about"
                         rows={3}
                         className="max-w-lg shadow-sm block w-full focus:ring-teal-500 focus:border-teal-500 sm:text-sm border border-gray-300 rounded-md"
                         defaultValue={''}
+                        value={details}
                       />
                       <p className="mt-2 text-sm text-gray-500">
                         Write a few sentences about product.
@@ -138,7 +147,7 @@ const AddNewProducts = ({ setEditModal }) => {
                     >
                       Product Image
                     </label>
-                    <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    {/* <div className="mt-1 sm:mt-0 sm:col-span-2">
                       <div className="max-w-lg flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                         <div className="space-y-1 text-center">
                           <svg
@@ -175,9 +184,9 @@ const AddNewProducts = ({ setEditModal }) => {
                           </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
+                  
+                  </div> */}
+                </div>
                   <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                     <label
                       htmlFor="country"
@@ -278,7 +287,7 @@ const AddNewProducts = ({ setEditModal }) => {
                           id="city"
                           className="max-w-lg block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
                         />
-                      </div> */}
+                      </div> 
                     {/* </div>
                   </div>
                 </div>
@@ -301,6 +310,8 @@ const AddNewProducts = ({ setEditModal }) => {
                 </div>
               </div>
               </div>
+            </div>
+            </div>
             </div>
             </form>
           </div>
