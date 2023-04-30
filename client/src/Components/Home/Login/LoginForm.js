@@ -107,8 +107,7 @@ else{
                 <div className="absolute bg-gradient-to-b from-teal-600 to-teal-400 opacity-75 inset-0 z-0"></div>
                 <div className="w-full max-w-md z-10">
                   <div className="sm:text-4xl font-semibold text-gray-100 leading-tight mb-6">
-                    Your Goods, delivered <br /> Say goodbye to all your
-                    Fresh Products worries with us
+                  Your Donation Matters !!
                   </div>
                   {/* <div className="sm:text-sm xl:text-md text-gray-200 font-normal">
                     What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
