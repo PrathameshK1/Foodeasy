@@ -224,7 +224,7 @@ const Footer = () => {
           <div className="container px-5 py-4 mx-auto">
             <p className="text-sm text-gray-700 capitalize xl:text-center">
               © 2021 All rights reserved{' '}
-              <span className="text-teal-700">E-Pharmacy</span>
+              <span className="text-teal-700">Pradnyesh Jain</span>
             </p>
           </div>
         </div>
