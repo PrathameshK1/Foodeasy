@@ -302,9 +302,7 @@ const AllOrders = () => {
           </div>
         </div>
       </div>
-      <div>
-      <iframe height="430" width="350" src="https://bot.dialogflow.com/eef602ec-5976-4272-85b2-6a061a20391e"></iframe>
-</div>
+      
 
       Edit Modal Component
       {/* {editModal ? (
