@@ -446,27 +446,61 @@ const Products = () => {
         </Link>
       </div>
     </Link>
+    
   </div>
+  
 ))};
- <form onSubmit={handleSubmit}>
+<div>
+<h2 className="text-2xl font-display font-semibold tracking-wide text-teal-700">
+   Food Allergies:
+            </h2>
+
+     <form onSubmit={handleSubmit}>
       <label>
-        Food Allergies:
-        <input type="text" value={foodAllergies} onChange={(event) => setFoodAllergies(event.target.value)} />
+       
+        <select value={foodAllergies} onChange={(event) => setFoodAllergies(event.target.value)}>
+          <option value="">--Select--</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Eggs">Eggs</option>
+          <option value="Peanuts">Peanuts</option>
+          <option value="Tree Nuts">Tree Nuts</option>
+          <option value="Wheat">Wheat</option>
+          <option value="Soy">Soy</option>
+          <option value="Fish">Fish</option>
+          <option value="Shellfish">Shellfish</option>
+        </select>
       </label>
       <br />
       <label>
         Religious Restrictions:
-        <input type="text" value={religiousRestrictions} onChange={(event) => setReligiousRestrictions(event.target.value)} />
+        <select value={religiousRestrictions} onChange={(event) => setReligiousRestrictions(event.target.value)}>
+          <option value="">--Select--</option>
+          <option value="Halal">Halal</option>
+          <option value="Kosher">Kosher</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="None">None</option>
+        </select>
       </label>
       <br />
       <label>
         Preferred Cuisines:
-        <input type="text" value={preferredCuisines} onChange={(event) => setPreferredCuisines(event.target.value)} />
+        <select value={preferredCuisines} onChange={(event) => setPreferredCuisines(event.target.value)}>
+          <option value="">--Select--</option>
+          <option value="American">American</option>
+          <option value="Chinese">Chinese</option>
+          <option value="French">French</option>
+          <option value="Indian">Indian</option>
+          <option value="Italian">Italian</option>
+          <option value="Mexican">Mexican</option>
+          <option value="Thai">Thai</option>
+          <option value="Other">Other</option>
+        </select>
       </label>
       <br />
       <button type="submit">Submit</button>
-    </form>
- 
+    </form>
+     </div>
 
         </div>
       </div>
