@@ -40,7 +40,7 @@ const ShopCard = () => {
       {/* Shop cards */}
       <div className="cards flex flex-wrap justify-center">
         {vendorData.filter(function students(student){
-    return student.location === "Andheri West, Mumbai";
+    return student.location === "Andheri West, Mumbai" || student.location === " Andheri East, Mumbai";
       }).map((record) => (
           <div className="pb-4 m-6 rounded-lg shadow-3xl w-96 md:w-2/5 lg:w-1/4 bg-white">
             <img src={record.pic} className="rounded-t-lg" alt="" />
