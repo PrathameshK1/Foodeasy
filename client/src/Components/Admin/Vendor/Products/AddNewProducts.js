@@ -45,7 +45,7 @@ function AddNewProduct() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
-          <input type="text" id="name" value={formData.name} onChange={handleChange} className="border border-gray-300 rounded-lg py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" />
+          <input type="text" id="name" value={formData.name} onChange={(event) => setName(event.target.value)} className="border border-gray-300 rounded-lg py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" />
         </div>
         <div>
           <label htmlFor="description" className="block text-gray-700 font-medium mb-2">Description</label>
