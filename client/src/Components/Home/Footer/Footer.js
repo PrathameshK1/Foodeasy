@@ -213,7 +213,7 @@ const Footer = () => {
                     to="/"
                     className="text-gray-500 cursor-pointer hover:text-teal-500"
                   >
-                    +123-456-7890
+                  9225310473
                   </Link>
                 </li>
               </nav>
