@@ -494,13 +494,14 @@ const Products = () => {
           <option value="Italian">Italian</option>
           <option value="Mexican">Mexican</option>
           <option value="Thai">Thai</option>
+          <option value="Thai">African</option>
           <option value="Other">Other</option>
         </select>
       </label>
       <br />
       <button type="submit">Submit</button>
     </form>
-     </div>
+    </div>
 
         </div>
       </div>
